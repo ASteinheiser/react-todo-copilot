@@ -4,7 +4,47 @@ Almost all of the code was created with [GitHub Copilot](https://copilot.github.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Want to try it yourself?
+Before you begin, make sure you have the [Copilot Plugin](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for VSCode. You also need to make sure that you have a GitHub account that can use Copilot.
+
+To get started, you can either follow the `Rules`->`Setup` section below, or:
+- Clone down the project: `git clone https://github.com/ASteinheiser/react-todo-copilot.git`
+- Switch to the `base-template` branch: `git checkout -t origin/base-template`
+
+And with that, you're good to go! Check out the `Rules`->`The Experiment` section for next steps...
+
+# Rules
+The goal here is to type as little code as possible and let Copilot go on "autopilot", so to speak ;)
+
+## Setup
+- Generate a base React project: `npx create-react-app react-todo-copilot`
+- Remove unneeded files:
+```
+src/App.css
+src/App.test.js
+src/logo.svg
+src/reportWebVitals.js
+src/setupTests.js
+```
+- Remove unneeded packages:
+```
+@testing-library/jest-dom
+@testing-library/react
+@testing-library/user-event
+web-vitals
+```
+- Remove `reportWebVitals()` call from `index.js`
+- Delete all the code in `App.js` to prepare for Copilot magic
+
+## The Experiment
+Now that we have a minimal React app, and an empty `App.js`, we can start leveraging Copilot to create our Todo app. For this experiment, I will define a few rules that I will abide by:
+- Everything will be kept in one file, as Copilot [currently only uses the context of the current file](https://github.com/github/copilot-preview/discussions/920#discussioncomment-1046402) to create suggestions
+- Multiple comments can be made in the one file
+- Each comment must entirely create it's respective component
+
+Now get started writing comments, press `tab`, and observe.
+
+# Available Scripts
 
 In the project directory, you can run:
 
