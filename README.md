@@ -33,14 +33,26 @@ src/setupTests.js
 @testing-library/user-event
 web-vitals
 ```
+- Install packages for [Material UI](https://material-ui.com/):
+```
+@material-ui/core
+@material-ui/icons
+```
+- Add the following block inside the `<head>` tags in `public/index.html`:
+```html
+<!-- fonts and icons for @material-ui/core library -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+```
 - Remove `reportWebVitals()` call from `index.js`
-- Delete all the code in `App.js` to prepare for Copilot magic
+- Delete all the code in `src/App.js` to prepare for Copilot magic
 
 ## The Experiment
-Now that we have a minimal React app, and an empty `App.js`, we can start leveraging Copilot to create our Todo app. For this experiment, I will define a few rules that I will abide by:
+Now that we have a minimal React app, and an empty `src/App.js`, we can start leveraging Copilot to create our Todo app. For this experiment, I will define a few rules that I will abide by:
 - Everything will be kept in one file, as Copilot [currently only uses the context of the current file](https://github.com/github/copilot-preview/discussions/920#discussioncomment-1046402) to create suggestions
 - Multiple comments can be made in the one file
 - Each comment must entirely create it's respective component
+- `@material-ui/core` components will be used to simplify styling
 
 Now get started writing comments, press `tab`, and observe.
 
