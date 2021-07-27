@@ -1,6 +1,6 @@
 # React Todo Copilot
 
-Almost all of the code was created with [GitHub Copilot](https://copilot.github.com/). This project is a test to see what would happen if you let Copilot try to intelligently create an entire app from just comments.
+Almost all of the code was created with [GitHub Copilot](https://copilot.github.com/). This project is an experiment to see what would happen if you let Copilot try to intelligently create an entire app from just comments.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
