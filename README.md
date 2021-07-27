@@ -44,7 +44,7 @@ web-vitals
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
-- Remove `reportWebVitals()` call from `index.js`
+- Remove `reportWebVitals()` call from `src/index.js`
 - Delete all the code in `src/App.js` to prepare for Copilot magic
 
 ## The Experiment
